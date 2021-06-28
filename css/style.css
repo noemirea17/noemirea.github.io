@@ -64,9 +64,19 @@ section h1 {
   margin: 0;
 }
 
+.header-right ul li a {
+  display: inline-block;
+  color: white;
+}
+
 .ms_menu a,
 .ms_navbar {
   color: white;
+}
+
+.hamburger-menu i,
+.header-right i {
+  font-size: 1.5em;
 }
 
 /* jumbotron */
@@ -174,3 +184,58 @@ button:hover {
 }
 
 /* da eliminare */
+.header-right a {
+  display: none;
+}
+
+.hamburger-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  padding: 20px;
+  height: 100%;
+  background: #452b58;
+  z-index: 9;
+}
+
+.hamburger-menu ul {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  list-style: none;
+}
+.hamburger-menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+}
+.close {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: white;
+  font-size: 35px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .header-right ul {
+    display: none;
+  }
+  .header-right > a {
+    display: block;
+    height: 100%;
+    line-height: 70px;
+    float: right;
+    color: lightgrey;
+    font-size: 20px;
+  }
+
+  .hamburger-menu.active {
+    display: block;
+  }
+}
