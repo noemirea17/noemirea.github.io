@@ -159,14 +159,6 @@ button:hover {
   color: #8839d2;
 }
 
-.carousel-control-prev {
-  left: -100px;
-}
-
-.carousel-control-next {
-  right: -100px;
-}
-
 /* contacts */
 
 #contacts {
