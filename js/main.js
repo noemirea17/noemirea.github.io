@@ -1,4 +1,4 @@
-var hamburgerMenu = $("a i");
+var hamburgerMenu = $("a.hamb_menu i.hamb_menu");
 
 hamburgerMenu.click(function () {
   $(".hamburger-menu").show();
